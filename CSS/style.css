@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+/* -- background -- */
+
+#fondo{
+    background-color: #1a1a1a;
+    background-image: url(../Images/rayos.jpg);
+}
+
+#background img{
+    width: 900px;
+}
+
+#background{
+    text-align: center;
+    margin-top: 2px;
+}
+
+#background h1{
+    color: white;
+
+}
+
+/* Secciones index */
+
+#frases{
+    text-align: center;
+}
+
+
+.section{
+    width: 300px;
+    height: 400px;
+    display: inline-table;
+    text-align: center;
+    margin: 0 40px 0 40px 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section p{
+    color: burlywood;
+    line-height: 50px;
+    font-size: 30px;
+}
+.section img{
+    margin-bottom: 30px;
+    margin-top: 35px;
+    width: 50px;
+}
+
+.section h5{
+    color:#a7a5a5e1;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* F O O T E R*/
+
+.footer{
+    text-align: center;
+}
+
+.footer hr{
+    margin:0 100px 0 100px;
+}
+
+
+.footer div{
+    margin: 40px;
+}
+
+.footer img{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.192);
+}
+
+.footer p{
+    text-align: center;
+    color: bisque;
+}
+
+/* Q U I E N E S     S O M O S  */
+
+#quienesomos{
+    margin: 20px;
+    text-align: center;
+}
+
+.seccion_primaria{
+    inline-size: 600px;
+    margin: 25px;
+    border-radius: 6%;
+}
+
+.texto{
+    color: bisque;
+    margin: 15px 0 10px 0;
+}
+
+section div p{
+    font-size: 17px;
+}
+
+/* -- secciones-- */
+
+.container{
+    padding-top: 15px;
+    margin: 50px;
+}
+
+/* tamaño y ubicacion de imagen */
+.img--left{
+    float: left;
+    height: 385px;
+    width: 493px
+}
+/* tamaño y ubicacion de imagen */
+.img-right{
+    float: right;
+    height: 385px;
+    width: 503px
+}
+
+.text-white{
+    margin: 8px;
+}
+
+
+
+
+/*  R E P E R T O R I O  */
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas con ancho igual */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas con altura igual */
+    grid-gap: 20px; /* espacio entre elementos */
+    justify-content: space-around;
+    align-content: space-evenly;
+    padding: 100px;
+  }
+  
+  .cancion {
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%; /* establecer la relación de aspecto */
+    position: relative;
+  }
+  
+  .cancion iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+
+/*  P R E S E N T A C I O N E S */
+ 
+.img-size{
+    width: 350px;
+    height: 200px;
+}
+
