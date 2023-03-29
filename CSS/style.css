@@ -12,7 +12,7 @@
 }
 
 #background img{
-    width: 900px;
+    width: 62%;
 }
 
 #background{
@@ -27,39 +27,33 @@
 
 /* Secciones index */
 
-#frases{
-    text-align: center;
+p{
+    color: bisque;
 }
 
+@media screen and (max-width: 600px) {
+    .section {
+      width: 100%;
+    }
+  
+    /* Alinea los objetos verticalmente */
+    .section img,
+    .section p,
+    .section h5 {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (min-width: 601px) {
+    .section {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
 
-.section{
-    width: 300px;
-    height: 400px;
-    display: inline-table;
-    text-align: center;
-    margin: 0 40px 0 40px 0;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.section p{
-    color: burlywood;
-    line-height: 50px;
-    font-size: 30px;
-}
-.section img{
-    margin-bottom: 30px;
-    margin-top: 35px;
-    width: 50px;
-}
-
-.section h5{
-    color:#a7a5a5e1;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
 
 
 /* F O O T E R*/
