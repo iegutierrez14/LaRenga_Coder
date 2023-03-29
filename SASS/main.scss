@@ -1,0 +1,153 @@
+$color-blanco: #fff;
+$color-negro: #1a1a1a;
+$color-bisque: bisque;
+$color-gris-claro: rgba($color-blanco, 0.192);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#fondo {
+  background-color: $color-negro;
+  background-image: url(../Images/rayos.jpg);
+}
+
+#background {
+  text-align: center;
+  margin-top: 2px;
+
+  img {
+    width: 62%;
+  }
+
+  h1 {
+    color: $color-blanco;
+  }
+}
+
+p {
+  color: $color-bisque;
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    width: 100%;
+
+    img,
+    p,
+    h5 {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .section {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.footer {
+  text-align: center;
+
+  hr {
+    margin: 0 100px 0 100px;
+  }
+
+  div {
+    margin: 40px;
+  }
+
+  img {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: $color-gris-claro;
+  }
+
+  p {
+    text-align: center;
+    color: $color-bisque;
+  }
+}
+
+#quienesomos {
+  margin: 20px;
+  text-align: center;
+
+  .seccion_primaria {
+    inline-size: 600px;
+    margin: 25px;
+    border-radius: 6%;
+  }
+
+  .texto {
+    color: $color-bisque;
+    margin: 15px 0 10px 0;
+  }
+
+  section div p {
+    font-size: 17px;
+  }
+}
+
+.container {
+  padding-top: 15px;
+  margin: 50px;
+
+  .img--left {
+    float: left;
+    height: 385px;
+    width: 493px;
+  }
+
+  .img-right {
+    float: right;
+    height: 385px;
+    width: 503px;
+  }
+
+  .text-white {
+    margin: 8px;
+  }
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: space-around;
+    align-content: space-evenly;
+    padding: 100px;
+
+    .cancion {
+        width: 100%;
+        height: 0;
+        padding-bottom: 125%;
+        position: relative;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+
+.img-size{
+    width: 350px;
+    height: 200px;
+}
