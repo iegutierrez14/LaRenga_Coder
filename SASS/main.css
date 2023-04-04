@@ -66,41 +66,6 @@ p {
   color: bisque;
 }
 
-#quienesomos {
-  margin: 20px;
-  text-align: center;
-}
-#quienesomos .seccion_primaria {
-  inline-size: 600px;
-  margin: 25px;
-  border-radius: 6%;
-}
-#quienesomos .texto {
-  color: bisque;
-  margin: 15px 0 10px 0;
-}
-#quienesomos section div p {
-  font-size: 17px;
-}
-
-.container {
-  padding-top: 15px;
-  margin: 50px;
-}
-.container .img--left {
-  float: left;
-  height: 385px;
-  width: 493px;
-}
-.container .img-right {
-  float: right;
-  height: 385px;
-  width: 503px;
-}
-.container .text-white {
-  margin: 8px;
-}
-
 .album {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
