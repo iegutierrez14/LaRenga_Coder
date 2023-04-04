@@ -110,3 +110,87 @@ p {
     width: 350px;
     height: 200px;
 }
+
+
+/* ANIMACION INDEX */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp{ 
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.uno {
+  animation-name: fadeInUp;
+}
+.dos{ 
+  animation-name: fadeInUp;
+  animation-delay: 0.5s;
+}
+.tres {
+  animation-name: fadeInUp;
+  animation-delay: 1s;
+}
+
+/* ANIMACION MENU HAMBURGUESA */
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  animation: rotate 1s forwards;
+}
+
+.navbar-toggler-icon {
+  animation: rotate 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+
+
+/* FORMULARIO */
+
+.form-control:focus {
+  border-color: #4d4dff;
+  box-shadow: none;
+}
+
+
+.btn-primary:hover {
+  background-color: #4d4dff;
+  border-color: #4d4dff;
+}
+
+
+form {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
