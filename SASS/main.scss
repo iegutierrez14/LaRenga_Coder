@@ -80,29 +80,24 @@ p {
   }
 }
 
-.album {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    justify-content: space-around;
-    align-content: space-evenly;
-    padding: 100px;
+/* Repertorio */
 
-    .cancion {
-        width: 100%;
-        height: 0;
-        padding-bottom: 125%;
-        position: relative;
+ .album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
+.cancion {
+  width: 30%;
+  margin: 0 10px 30px;
+}
+@media (max-width: 767px) {
+  .cancion {
+    width: 100%;
+  }
 }
 
 
